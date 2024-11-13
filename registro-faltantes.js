@@ -14,8 +14,8 @@ class Articulo{
 // Array de productos base
 const baseArticulos = [
     {
-        codigo: "001"
-        nombre: "Bandera Argentina 90x144", 
+        codigo: "001",
+        nombre: "Bandera Argentina 90x144",
         proveedor: "Nuevo Milenio", 
         codProv:1211, 
         cantPedido:0, 
@@ -33,6 +33,11 @@ const baseArticulos = [
     
 ]
 
+
+const mostrarArticulos = document.getElementById("baseArticulos.nombre")
+mostrarArticulos.textContent = baseArticulos.join("-") 
+
+/*
 const mostrarArticulos = (arrayArticulos)=>{
     const contenedorArticulos = document.getElementById("contenedorArticulos")
     contenedorArticulos.innerHTML = ""
@@ -54,4 +59,5 @@ const mostrarArticulos = (arrayArticulos)=>{
                     </form>
         </div>            
     }
-)
+)}
+*/
